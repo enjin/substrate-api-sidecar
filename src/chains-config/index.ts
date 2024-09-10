@@ -48,6 +48,8 @@ import { polymeshControllers } from './polymeshControllers';
 import { shidenControllers } from './shidenControllers';
 import { soraControllers } from './soraControllers';
 import { westendControllers } from './westendControllers';
+import { enjinControllers } from "./enjinControllers";
+import { canaryControllers } from "./canaryControllers";
 
 const specToControllerMap: { [x: string]: ControllerConfig } = {
 	westend: westendControllers,

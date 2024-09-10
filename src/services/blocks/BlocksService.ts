@@ -594,6 +594,20 @@ export class BlocksService extends AbstractService {
 
 				if (phase.isApplyExtrinsic) {
 					const extrinsicIdx = phase.asApplyExtrinsic.toNumber();
+					if(!extrinsics[extrinsicIdx]) {
+						extrinsics[extrinsicIdx] = { 
+							events: [] as ISanitizedEvent[],
+							method: sanitizedEvent.method,
+							args: {},
+							hash: '',
+							success: true,
+							signature: null,
+							nonce: null,
+							tip: null,
+							info: {},
+							paysFee: null,
+						};	
+					}
 					const extrinsic = extrinsics[extrinsicIdx];
 
 					if (!extrinsic) {
