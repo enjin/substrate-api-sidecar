@@ -57,6 +57,6 @@ export const enjinControllers: ControllerConfig = {
 		finalizes: true,
 		minCalcFeeRuntime: 100,
 		blockStore: initLRUCache(),
-		hasQueryFeeApi: new QueryFeeDetailsCache(27, 28),
+		hasQueryFeeApi: new QueryFeeDetailsCache(null, null),
 	},
 };
