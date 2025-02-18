@@ -31,12 +31,14 @@ import { astarControllers } from './astarControllers';
 import { bifrostControllers } from './bifrostControllers';
 import { bifrostPolkadotControllers } from './bifrostPolkadotControllers';
 import { calamariControllers } from './calamariControllers';
+import { canaryControllers } from './canaryControllers';
 import { coretimeControllers } from './coretimeControllers';
 import { crustControllers } from './crustControllers';
 import { defaultControllers } from './defaultControllers';
 import { dockMainnetControllers } from './dockMainnetControllers';
 import { dockPoSMainnetControllers } from './dockPoSMainnetControllers';
 import { dockTestnetControllers } from './dockPoSTestnetControllers';
+import { enjinControllers } from './enjinControllers';
 import { heikoControllers } from './heikoControllers';
 import { karuraControllers } from './karuraControllers';
 import { kiltControllers } from './kiltControllers';
@@ -87,6 +89,8 @@ export const specToControllerMap: { [x: string]: ControllerConfig } = {
 	'coretime-polkadot': coretimeControllers,
 	'coretime-kusama': coretimeControllers,
 	'yet-another-parachain': assetHubWestendControllers,
+    enjin: enjinControllers,
+    canary: canaryControllers,
 };
 
 export const assetHubSpecNames = new Set([
