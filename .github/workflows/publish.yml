@@ -3,7 +3,7 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - enjin
+      - feature/DEVOP-457/build-and-push-docker-image-to-docker-hub-for-sidecar
     tags:
       - 'v*.*.*'
       
