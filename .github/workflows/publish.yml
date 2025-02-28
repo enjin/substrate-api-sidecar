@@ -3,7 +3,7 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - feature/DEVOP-457/build-and-push-docker-image-to-docker-hub-for-sidecar
+      - enjin
     tags:
       - 'v*.*.*'
       
@@ -29,7 +29,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: enjin/enjin-sidecar
+          images: enjin/substrate-api-sidecar
           tags: |
             type=raw,value=latest
             type=sha,format=short
